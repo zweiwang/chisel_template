@@ -15,6 +15,7 @@ class Decoder(inputBits: Int) extends Module{
 
 }
 
+
 object Decoder extends App {
   val verilogString = (new chisel3.stage.ChiselStage).execute(Array(""),
     Seq(ChiselGeneratorAnnotation(() => (new Decoder(3)))))
